@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Memory Game</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="bg-image"></div>
+    <header>
+        <a href="index.html">
+            <div id="logo">
+                <span class="hor" style="--h: 1; --v: 3; --z: 0; --delay: .2s">M</span>
+                <span class="hor" style="--h: 2; --v: 3; --z: 1; --delay: .1s">E</span>
+                <span class="cen" style="--delay: 0s">M</span>
+                <span class="hor" style="--h: 4; --v: 3; --z: 2; --delay: .1s">O</span>
+                <span class="hor" style="--h: 5; --v: 3; --z: 1; --delay: .2s">R</span>
+                <span class="hor" style="--h: 6; --v: 3; --z: 0; --delay: .3s">Y</span>
+                <span class="vert" style="--h: 3; --v: 1; --z: 0; --delay: .2s">G</span>
+                <span class="vert" style="--h: 3; --v: 2; --z: 1; --delay: .1s">A</span>
+                <span class="vert" style="--h: 3; --v: 4; --z: 0; --delay: .1s">E</span>
+            </div>
+            <div id="logo-sm">
+                <img src="./assets/MemoryGame-logo.png" width="150px">
+            </div>
+        </a>
+    </header>
+
+    <main id="game">
+        <div class="table grid"></div>
+
+        <div class="endgame-screen" style="display: none;">
+            <div class="endgame">
+                <h1>¡Ganaste!</h1>
+                <ul>
+                    <li><h2>Tiempo: <span>00:00</span></h2></li>
+                    <li><h2>Clics: <span>0</span></h2></li>
+                </ul>
+                <div class="btns">
+                    <button id="back">Volver</button>
+                    <button id="replay">Otra Partida</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" 
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="./js/game.js"></script>
+</body>
+</html>

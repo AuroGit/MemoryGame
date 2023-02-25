@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Memory Game</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-image: url('./assets/themes/default-bg.webp');">
+    <div id="bg-fade"></div>
+    <header>
+        <div id="logo">
+            <span class="hor" style="--h: 1; --v: 3; --z: 0; --delay: .2s">M</span>
+            <span class="hor" style="--h: 2; --v: 3; --z: 1; --delay: .1s">E</span>
+            <span class="cen" style="--delay: 0s">M</span>
+            <span class="hor" style="--h: 4; --v: 3; --z: 2; --delay: .1s">O</span>
+            <span class="hor" style="--h: 5; --v: 3; --z: 1; --delay: .2s">R</span>
+            <span class="hor" style="--h: 6; --v: 3; --z: 0; --delay: .3s">Y</span>
+            <span class="vert" style="--h: 3; --v: 1; --z: 0; --delay: .2s">G</span>
+            <span class="vert" style="--h: 3; --v: 2; --z: 1; --delay: .1s">A</span>
+            <span class="vert" style="--h: 3; --v: 4; --z: 0; --delay: .1s">E</span>
+        </div>
+        <div id="logo-sm">
+            <img src="./assets/MemoryGame-logo.png" width="150px">
+        </div>
+    </header>
+
+    <main id="settings" class="default">
+        <section id="theme">
+            <h2>Tema</h2>
+            <hr>
+            <div>
+                <img src="./assets/themes/spiderman.png" data-value="spiderman">
+                <img src="./assets/themes/harry_potter.png" data-value="harry_potter">
+                <img src="./assets/themes/default.png" data-value="default" selected>
+                <img src="./assets/themes/simpsons.png" data-value="simpsons">
+                <img src="./assets/themes/kingdom_hearts.png" data-value="kingdom_hearts">
+            </div>
+        </section>
+
+        <section id="size">
+            <h2>Tamaño del tablero</h2>
+            <hr>
+            <form name="size">
+                <div class="landscape">
+                    <label for="1-l">4x3</label>
+                    <input type="radio" id="1-l" name="size" data-value="4x3">
+                </div>
+                <div class="portrait">
+                    <label for="1-p">3x4</label>
+                    <input type="radio" id="1-p" name="size" data-value="3x4">
+                </div>
+                <div class="portrait">
+                    <label for="2-p">4x4</label>
+                    <input type="radio" id="2-p" name="size" data-value="4x4">
+                </div>
+                <div class="landscape">
+                    <label for="3-l">6x3</label>
+                    <input type="radio" id="3-l" name="size" data-value="6x3">
+                </div>
+                <div class="portrait">
+                    <label for="4-p">4x5</label>
+                    <input type="radio" id="4-p" name="size" data-value="4x5">
+                </div>
+                <div class="landscape">
+                    <label for="4-l">5x4</label>
+                    <input type="radio" id="4-l" name="size" data-value="5x4">
+                </div>
+                <div class="both">
+                    <label for="5-b">6x4</label>
+                    <input type="radio" id="5-b" name="size" data-value="6x4" checked>
+                </div>
+                <div class="portrait">
+                    <label for="6-p">5x6</label>
+                    <input type="radio" id="6-p" name="size" data-value="5x6">
+                </div>
+                <div class="landscape">
+                    <label for="6-l">6x5</label>
+                    <input type="radio" id="6-l" name="size" data-value="6x5">
+                </div>
+            </form>
+        </section>
+
+        <button id="play">Jugar</button>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" 
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="./js/gameOptions.js"></script>
+</body>
+</html>

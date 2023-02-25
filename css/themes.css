@@ -1,0 +1,147 @@
+/* Temas */
+
+    /* Default */
+    .default>section, main.default button#play, .default.endgame, .default.endgame button {
+        font-family: 'Montserrat', sans-serif;
+        border: solid 1px #fff;
+        border-radius: 10px;
+        -webkit-backdrop-filter: blur(2px);
+                backdrop-filter: blur(2px);
+        color: #fff;
+    }
+    main.default button#play { background-color: transparent; }
+    .default.endgame button { background-color: #888; }
+    main.default button#play:hover, .default.endgame button:hover { background-color: #fff; color: #000; }
+    
+        /* Spiderman */
+    .spiderman>section, main.spiderman button#play, .spiderman.endgame, .spiderman.endgame button {
+        font-family: 'Goldman', cursive;
+        background-color: rgba(255,255,255,.1);
+        background-size: 100% 100%;
+        border: none;
+        border-radius: 5px;
+        -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
+        color: #fff;
+    }
+    .spiderman input { background: none; border: dashed 1px #fff; }
+    .spiderman input:checked { border: solid 2px #fff; }
+    .spiderman input:checked::after {
+        --ac: #f00;
+        box-shadow: none;
+    }
+    main.spiderman button#play, .spiderman.endgame button { background-color: #c11; }
+    main.spiderman button#play:hover, .spiderman.endgame button:hover { background-color: #fff; color: #000; }
+    
+        /* Harry Potter */
+    .harry_potter {
+        background-image: url('../assets/pergamine-bg.png');
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    .harry_potter>section, main.harry_potter button#play, .harry_potter.endgame * {
+        font-family: 'Quintessential', cursive;
+        box-shadow: none;
+    }
+    .harry_potter.endgame h1 { font-size: 3.5em; }
+    .harry_potter>section h2, .harry_potter.endgame * { color: #000; position: relative;}
+        .harry_potter>section h2::before, .harry_potter>section h2::after,
+        .harry_potter.endgame h1::before, .harry_potter.endgame h1::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 40%;
+            width: 50px;
+            height: 25%;
+            background-image: url('../assets/flourish.png');
+            background-size: 100% 100%;
+        }
+        .harry_potter>section h2::before, .harry_potter.endgame h1::before { right: calc(100% + 5px); transform: scaleX(-100%); }
+        .harry_potter>section h2::after, .harry_potter.endgame h1::after { left: calc(100% + 5px); }
+    .harry_potter>section hr { background-image: linear-gradient(to right, transparent, #000, transparent); }
+    .harry_potter input { background-color: transparent; border: solid 1px #000; }
+        .harry_potter input:checked::after { --ac: #800; box-shadow: none; }
+    main.harry_potter button#play {
+        --color: #800;
+        position: relative;
+        width: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 25px;
+        background: url('../assets/btn-frame.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        color: var(--color);
+        opacity: .5;
+        transition: opacity .5s;
+    }
+    main.harry_potter button#play:hover, .harry_potter.endgame button:hover { opacity: 1; }
+    .harry_potter.endgame button {
+        --color: #800;
+        padding: 30px;
+        background: url('../assets/btn-frame.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        color: var(--color);
+        opacity: .5;
+        transition: opacity .5s;
+        line-height: 1em;
+    }
+    
+        /* Simpsons */
+    .simpsons>section, main.simpsons button#play, .simpsons.endgame, .simpsons.endgame button {
+        font-family: 'Fuzzy Bubbles', cursive;
+        background-color: #ec1;
+        border: solid 4px #f32;
+        border-radius: 10px;
+        -webkit-backdrop-filter: blur(2px);
+                backdrop-filter: blur(2px);
+        color: #f32;
+    }
+    .simpsons>section h2 { color: #f32; }
+    .simpsons.endgame h2 { color: #000; font-weight: 600; }
+    .simpsons>section hr { background-image: linear-gradient(to right, transparent, #f32, transparent); }
+    .simpsons input { width: 20px; height: 20px; }
+    .simpsons input:not(:checked) { border: solid 2px #000;}
+    .simpsons input:checked::after {
+        box-shadow: none;
+        background-color: #ec1;
+        background-image: url('../assets/donut.png');
+        background-size: contain;
+    }
+    main.simpsons button#play, .simpsons.endgame button { background-color: #f32; color: #ec1; }
+    main.simpsons button#play:hover, .simpsons.endgame button:hover { background-color: #fff; color: #f32; }
+    
+        /* Kingdom Hearts */
+    .kingdom_hearts>section, main.kingdom_hearts button#play, 
+        .kingdom_hearts.endgame, .kingdom_hearts.endgame button {
+            font-family: 'EB Garamond', serif;
+            background-color: rgba(0,0,0,.5);
+            border: double 4px #874;
+            border-radius: 0;
+            -webkit-backdrop-filter: blur(2px);
+                    backdrop-filter: blur(2px);
+            color: #888;
+    }
+    .kingdom_hearts>section h2, .kingdom_hearts.endgame h1 { color: #874; font-weight: 400; }
+    .kingdom_hearts>section hr { background-image: linear-gradient(to right, transparent, #874, transparent); }
+    .kingdom_hearts input {
+        border-radius: 0;
+        transform: rotateZ(45deg);
+        border: solid 1px #874;
+        background-color: #000;
+    }
+    .kingdom_hearts input:checked::after {
+        --ac: #fc6;
+        border-radius: 0;
+        box-shadow: none;
+        border: solid 3px #000;
+    }
+    main.kingdom_hearts button#play, 
+        .kingdom_hearts.endgame button { color: #874; }
+    main.kingdom_hearts button#play:hover, 
+        .kingdom_hearts.endgame button:hover { background-color: rgba(255,255,255,.1); color: #fff; }

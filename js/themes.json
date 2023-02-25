@@ -1,0 +1,16 @@
+{
+    "default":["bayek.png", "disney.png", "goku.png", "joker.png", "linkin-park.png",
+               "pikachu.png", "ring.png", "rock.png", "star-wars.png", "vitruvio.png"],
+
+    "harry potter":["castle.png", "griffindor.png", "hufflepuf.png", "mortifagos.png", "nimbus.png",
+                 "ravenclaw.png", "selector-hat.png", "slytherin.png", "snitch.png", "wands.png"],
+
+    "kingdom hearts":["crown.png", "dream-eaters.png", "eraqus.png", "heart.png", "heartless.png",
+                      "keyblade.png", "mickey.png", "unversed.png", "nobodies.png", "x.png"],
+
+    "simpsons":["barney.png", "bart.png", "burns.png", "homer.png", "lenny-carl.png",
+                "lisa.png", "maggie.png", "marge.png", "milhouse.png", "moe.png"],
+                
+    "spiderman":["far-from-home.png", "homecoming.png", "marvel.png", "miles-morales-marvel.png", "miles-morales.png",
+                 "no-way-home.png", "spiderman.png", "tasm.png", "tasm2.png", "venom-spider.png"]
+}
