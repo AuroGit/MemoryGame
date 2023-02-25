@@ -43,7 +43,7 @@ main#game { height: 100%; }
 
 /* Game */
 .table {
-    width: 100%;
+    width: fit-content;
     height: 100%;
     margin: auto;
     justify-items: center;
