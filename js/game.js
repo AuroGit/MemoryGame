@@ -101,5 +101,5 @@ function turnCard(card) {
     card.toggleAttribute("data-turned-up");
 }
 
-$('#back').click(function () { location.href = "/index.html"; });
+$('#back').click(function () { location.href = "/MemoryGame/index.html"; });
 $('#replay').click(function () { location.reload() });
