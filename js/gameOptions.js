@@ -32,7 +32,7 @@ function changeTheme(theme) {
         $('main').removeAttr('class');
         $('main').addClass(theme.replace(' ', '-'));
         $('body').css('background-image', 
-            `url(../assets/themes/${theme.replace(' ', '_')}-bg.webp)`);
+            `url(./assets/themes/${theme.replace(' ', '_')}-bg.webp)`);
     }, t);
     $('#bg-fade').fadeOut(t);
 }
