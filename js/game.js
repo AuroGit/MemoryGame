@@ -8,7 +8,7 @@ const paramsURL = new URLSearchParams(url);
 const gameOptions = {theme:paramsURL.get("theme"), size:paramsURL.get("dif")};
 
 $(document).ready(function () {
-    $('body').css('background-image', `url('../assets/themes/${gameOptions.theme}-bg.webp')`);
+    $('body').css('background-image', `url('./assets/themes/${gameOptions.theme}-bg.webp')`);
     $('.endgame').addClass(gameOptions.theme);
     tableBuild(gameOptions.theme, gameOptions.size);
 });
